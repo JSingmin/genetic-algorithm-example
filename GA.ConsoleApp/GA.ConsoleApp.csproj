@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\GA.Lib\GA.Lib.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+</Project>
