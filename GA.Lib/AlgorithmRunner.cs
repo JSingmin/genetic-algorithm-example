@@ -31,7 +31,11 @@ namespace GA.Lib
         }
 
         var fittest = population.OrderBy(i => i.Fitness).First();
-        this.OutputWriter.WriteLine($"Fittest: {fittest.ToString()} -> {fittest.Fitness}");
+        var fittestPopulation = population.Where(i => i.Fitness == fittest.Fitness);
+        foreach (Individual<City> fitIndividual in fittestPopulation)
+        {
+          this.OutputWriter.WriteLine($"{fitIndividual.ToString()} -> {fitIndividual.Fitness}");
+        }
         this.OutputWriter.WriteLine("");
         generation++;
 
